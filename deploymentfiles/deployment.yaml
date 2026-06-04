@@ -2,27 +2,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fb-deploy 
-  labels:
-    app: facebook
-    env: lab 
-
+   name: insta-deploy
+   labels:
+     app: instagram
+     env: sbox
 spec:
   selector:
     matchLabels:
-      app: facebook 
-  replicas: 2  
+      app: instagram
+  replicas: 3
   template:
     metadata:
-      name: fb-pod 
-      labels:
-        app: facebook
-        env: lab
-        tier: frontend 
-        version: v1_AC
+       name: insta-deploy
+       labels:
+         app: instagram
+         env: sbox
+         version: v1-VC
     spec:
-      containers:
-        - name: fb-pod-cont
-          image: navyadevopsaws25/navya_fb:latest
-          ports:
-            - containerPort: 8080
+     containers:
+      - name: insta-deploy-cont
+        image: navyadevopsaws25/batch17drepo:pythonimg
+        ports:
+          - containerPort: 80

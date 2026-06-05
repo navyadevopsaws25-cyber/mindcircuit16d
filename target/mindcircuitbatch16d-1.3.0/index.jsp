@@ -1,3 +1,3 @@
 <html>
-<h1> HI TEAM, MY NAME IS NAVYA, I AM LEARNING DEVOPS AND AWS WITH MADHU SIR TRAINING-NEW FEATURE </h1>
+<h1> learning end to end cicd project using earlier learn all the tools </h1>
 </html>

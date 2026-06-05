@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
         - name: fb-pod-cont
-          image: navyadevopsaws25/navya_fb:latest
+          image: navyadevopsaws25/navya_fb:10
           ports:
             - containerPort: 8080
        
